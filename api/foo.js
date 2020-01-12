@@ -1,4 +1,14 @@
+const getTextBlock = (msg, type = 'mrkdwn') => {
+  const obj = {
+    type,
+    text: msg
+  };
+};
+
 module.exports = (req, res) => {
-  const message = 'bar';
-  res.status(200).send(message);
+  const msg = 'BAR';
+  const obj = {};
+  obj.blocks = [];
+  obj.blocks.push({ type: section, text: getTextBlock(msg) });
+  res.status(200).send(JSON.stringify(obj));
 };

@@ -20,6 +20,7 @@ Node (built and test with Node 12, but _should_ be ok with 10 or 11).
 ### New deployments:
 
 - Setup the Now CLI tool and login to your account
+- Create a new secret on your server called AU_COM_ADVANCEPARTY_SLASHIE_TOKEN and set its value to
 - CD into the project's root folder and type `now`
 - That's all!
 
