@@ -74,17 +74,7 @@ module.exports = async (req, res) => {
     }
     await postMessage(channel_id, msg);
   } catch (error) {
-    // res.status(200).send(JSON.stringify(error));
     res.status(200).send(getFriendlyErrorMessage(error));
   }
-
-  // const msgObj = {
-  //   channel: userId,
-  //   text: `The current time is ${currentTime}`
-  // };
-
-  // const result = { body, query, text: 'HELLO' };
-  // console.log(auth);
-
   res.status(200).end();
 };
